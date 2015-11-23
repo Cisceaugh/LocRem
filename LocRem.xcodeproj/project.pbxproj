@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C1EDC5B41C03B80F009D807B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5B31C03B80F009D807B /* main.m */; };
+		C1EDC5B71C03B80F009D807B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5B61C03B80F009D807B /* AppDelegate.m */; };
+		C1EDC5BA1C03B80F009D807B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5B91C03B80F009D807B /* ViewController.m */; };
+		C1EDC5BD1C03B80F009D807B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC5BB1C03B80F009D807B /* Main.storyboard */; };
+		C1EDC5C01C03B80F009D807B /* LocRem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5BE1C03B80F009D807B /* LocRem.xcdatamodeld */; };
+		C1EDC5C21C03B80F009D807B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC5C11C03B80F009D807B /* Assets.xcassets */; };
+		C1EDC5C51C03B80F009D807B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC5C31C03B80F009D807B /* LaunchScreen.storyboard */; };
+		C1EDC5D01C03B80F009D807B /* LocRemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5CF1C03B80F009D807B /* LocRemTests.m */; };
+		C1EDC5DB1C03B80F009D807B /* LocRemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5DA1C03B80F009D807B /* LocRemUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C1EDC5CC1C03B80F009D807B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1EDC5A71C03B80F009D807B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1EDC5AE1C03B80F009D807B;
+			remoteInfo = LocRem;
+		};
+		C1EDC5D71C03B80F009D807B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1EDC5A71C03B80F009D807B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C1EDC5AE1C03B80F009D807B;
+			remoteInfo = LocRem;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C1EDC5AF1C03B80F009D807B /* LocRem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocRem.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1EDC5B31C03B80F009D807B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1EDC5B51C03B80F009D807B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1EDC5B61C03B80F009D807B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1EDC5B81C03B80F009D807B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C1EDC5B91C03B80F009D807B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C1EDC5BC1C03B80F009D807B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C1EDC5BF1C03B80F009D807B /* LocRem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocRem.xcdatamodel; sourceTree = "<group>"; };
+		C1EDC5C11C03B80F009D807B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1EDC5C41C03B80F009D807B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C1EDC5C61C03B80F009D807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EDC5CB1C03B80F009D807B /* LocRemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocRemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1EDC5CF1C03B80F009D807B /* LocRemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocRemTests.m; sourceTree = "<group>"; };
+		C1EDC5D11C03B80F009D807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EDC5D61C03B80F009D807B /* LocRemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocRemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1EDC5DA1C03B80F009D807B /* LocRemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocRemUITests.m; sourceTree = "<group>"; };
+		C1EDC5DC1C03B80F009D807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C1EDC5AC1C03B80F009D807B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EDC5C81C03B80F009D807B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EDC5D31C03B80F009D807B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C1EDC5A61C03B80F009D807B = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5B11C03B80F009D807B /* LocRem */,
+				C1EDC5CE1C03B80F009D807B /* LocRemTests */,
+				C1EDC5D91C03B80F009D807B /* LocRemUITests */,
+				C1EDC5B01C03B80F009D807B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C1EDC5B01C03B80F009D807B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5AF1C03B80F009D807B /* LocRem.app */,
+				C1EDC5CB1C03B80F009D807B /* LocRemTests.xctest */,
+				C1EDC5D61C03B80F009D807B /* LocRemUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C1EDC5B11C03B80F009D807B /* LocRem */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5B51C03B80F009D807B /* AppDelegate.h */,
+				C1EDC5B61C03B80F009D807B /* AppDelegate.m */,
+				C1EDC5B81C03B80F009D807B /* ViewController.h */,
+				C1EDC5B91C03B80F009D807B /* ViewController.m */,
+				C1EDC5BB1C03B80F009D807B /* Main.storyboard */,
+				C1EDC5C11C03B80F009D807B /* Assets.xcassets */,
+				C1EDC5C31C03B80F009D807B /* LaunchScreen.storyboard */,
+				C1EDC5C61C03B80F009D807B /* Info.plist */,
+				C1EDC5BE1C03B80F009D807B /* LocRem.xcdatamodeld */,
+				C1EDC5B21C03B80F009D807B /* Supporting Files */,
+			);
+			path = LocRem;
+			sourceTree = "<group>";
+		};
+		C1EDC5B21C03B80F009D807B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5B31C03B80F009D807B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C1EDC5CE1C03B80F009D807B /* LocRemTests */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5CF1C03B80F009D807B /* LocRemTests.m */,
+				C1EDC5D11C03B80F009D807B /* Info.plist */,
+			);
+			path = LocRemTests;
+			sourceTree = "<group>";
+		};
+		C1EDC5D91C03B80F009D807B /* LocRemUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5DA1C03B80F009D807B /* LocRemUITests.m */,
+				C1EDC5DC1C03B80F009D807B /* Info.plist */,
+			);
+			path = LocRemUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C1EDC5AE1C03B80F009D807B /* LocRem */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EDC5DF1C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRem" */;
+			buildPhases = (
+				C1EDC5AB1C03B80F009D807B /* Sources */,
+				C1EDC5AC1C03B80F009D807B /* Frameworks */,
+				C1EDC5AD1C03B80F009D807B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LocRem;
+			productName = LocRem;
+			productReference = C1EDC5AF1C03B80F009D807B /* LocRem.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C1EDC5CA1C03B80F009D807B /* LocRemTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EDC5E21C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRemTests" */;
+			buildPhases = (
+				C1EDC5C71C03B80F009D807B /* Sources */,
+				C1EDC5C81C03B80F009D807B /* Frameworks */,
+				C1EDC5C91C03B80F009D807B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1EDC5CD1C03B80F009D807B /* PBXTargetDependency */,
+			);
+			name = LocRemTests;
+			productName = LocRemTests;
+			productReference = C1EDC5CB1C03B80F009D807B /* LocRemTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C1EDC5D51C03B80F009D807B /* LocRemUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1EDC5E51C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRemUITests" */;
+			buildPhases = (
+				C1EDC5D21C03B80F009D807B /* Sources */,
+				C1EDC5D31C03B80F009D807B /* Frameworks */,
+				C1EDC5D41C03B80F009D807B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1EDC5D81C03B80F009D807B /* PBXTargetDependency */,
+			);
+			name = LocRemUITests;
+			productName = LocRemUITests;
+			productReference = C1EDC5D61C03B80F009D807B /* LocRemUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C1EDC5A71C03B80F009D807B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Francisco Ragland";
+				TargetAttributes = {
+					C1EDC5AE1C03B80F009D807B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 42AK92S3WA;
+					};
+					C1EDC5CA1C03B80F009D807B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 42AK92S3WA;
+						TestTargetID = C1EDC5AE1C03B80F009D807B;
+					};
+					C1EDC5D51C03B80F009D807B = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = 42AK92S3WA;
+						TestTargetID = C1EDC5AE1C03B80F009D807B;
+					};
+				};
+			};
+			buildConfigurationList = C1EDC5AA1C03B80F009D807B /* Build configuration list for PBXProject "LocRem" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C1EDC5A61C03B80F009D807B;
+			productRefGroup = C1EDC5B01C03B80F009D807B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C1EDC5AE1C03B80F009D807B /* LocRem */,
+				C1EDC5CA1C03B80F009D807B /* LocRemTests */,
+				C1EDC5D51C03B80F009D807B /* LocRemUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C1EDC5AD1C03B80F009D807B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EDC5C51C03B80F009D807B /* LaunchScreen.storyboard in Resources */,
+				C1EDC5C21C03B80F009D807B /* Assets.xcassets in Resources */,
+				C1EDC5BD1C03B80F009D807B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EDC5C91C03B80F009D807B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EDC5D41C03B80F009D807B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C1EDC5AB1C03B80F009D807B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EDC5BA1C03B80F009D807B /* ViewController.m in Sources */,
+				C1EDC5C01C03B80F009D807B /* LocRem.xcdatamodeld in Sources */,
+				C1EDC5B71C03B80F009D807B /* AppDelegate.m in Sources */,
+				C1EDC5B41C03B80F009D807B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EDC5C71C03B80F009D807B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EDC5D01C03B80F009D807B /* LocRemTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1EDC5D21C03B80F009D807B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C1EDC5DB1C03B80F009D807B /* LocRemUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1EDC5CD1C03B80F009D807B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1EDC5AE1C03B80F009D807B /* LocRem */;
+			targetProxy = C1EDC5CC1C03B80F009D807B /* PBXContainerItemProxy */;
+		};
+		C1EDC5D81C03B80F009D807B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C1EDC5AE1C03B80F009D807B /* LocRem */;
+			targetProxy = C1EDC5D71C03B80F009D807B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C1EDC5BB1C03B80F009D807B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1EDC5BC1C03B80F009D807B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C1EDC5C31C03B80F009D807B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1EDC5C41C03B80F009D807B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C1EDC5DD1C03B80F009D807B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1EDC5DE1C03B80F009D807B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C1EDC5E01C03B80F009D807B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocRem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C1EDC5E11C03B80F009D807B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LocRem/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRem;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C1EDC5E31C03B80F009D807B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocRemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocRem.app/LocRem";
+			};
+			name = Debug;
+		};
+		C1EDC5E41C03B80F009D807B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LocRemTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRemTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LocRem.app/LocRem";
+			};
+			name = Release;
+		};
+		C1EDC5E61C03B80F009D807B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LocRemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LocRem;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C1EDC5E71C03B80F009D807B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LocRemUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRemUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LocRem;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C1EDC5AA1C03B80F009D807B /* Build configuration list for PBXProject "LocRem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EDC5DD1C03B80F009D807B /* Debug */,
+				C1EDC5DE1C03B80F009D807B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1EDC5DF1C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRem" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EDC5E01C03B80F009D807B /* Debug */,
+				C1EDC5E11C03B80F009D807B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1EDC5E21C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRemTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EDC5E31C03B80F009D807B /* Debug */,
+				C1EDC5E41C03B80F009D807B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C1EDC5E51C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRemUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1EDC5E61C03B80F009D807B /* Debug */,
+				C1EDC5E71C03B80F009D807B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1EDC5BE1C03B80F009D807B /* LocRem.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1EDC5BF1C03B80F009D807B /* LocRem.xcdatamodel */,
+			);
+			currentVersion = C1EDC5BF1C03B80F009D807B /* LocRem.xcdatamodel */;
+			path = LocRem.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C1EDC5A71C03B80F009D807B /* Project object */;
+}
