@@ -6,7 +6,8 @@
 //  Copyright © 2015 Francisco Ragland. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
+@import MapKit;
 
 @interface ViewController : UIViewController
 

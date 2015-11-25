@@ -16,6 +16,8 @@
 		C1EDC5C51C03B80F009D807B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC5C31C03B80F009D807B /* LaunchScreen.storyboard */; };
 		C1EDC5D01C03B80F009D807B /* LocRemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5CF1C03B80F009D807B /* LocRemTests.m */; };
 		C1EDC5DB1C03B80F009D807B /* LocRemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5DA1C03B80F009D807B /* LocRemUITests.m */; };
+		C1EDC5EA1C03B82C009D807B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EDC5E91C03B82C009D807B /* MapKit.framework */; };
+		C1EDC5F21C054423009D807B /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5F11C054423009D807B /* LocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		C1EDC5D61C03B80F009D807B /* LocRemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocRemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1EDC5DA1C03B80F009D807B /* LocRemUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocRemUITests.m; sourceTree = "<group>"; };
 		C1EDC5DC1C03B80F009D807B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C1EDC5E91C03B82C009D807B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C1EDC5F01C054401009D807B /* LocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
+		C1EDC5F11C054423009D807B /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EDC5EA1C03B82C009D807B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 		C1EDC5A61C03B80F009D807B = {
 			isa = PBXGroup;
 			children = (
+				C1EDC5E91C03B82C009D807B /* MapKit.framework */,
 				C1EDC5B11C03B80F009D807B /* LocRem */,
 				C1EDC5CE1C03B80F009D807B /* LocRemTests */,
 				C1EDC5D91C03B80F009D807B /* LocRemUITests */,
@@ -107,7 +114,8 @@
 				C1EDC5B61C03B80F009D807B /* AppDelegate.m */,
 				C1EDC5B81C03B80F009D807B /* ViewController.h */,
 				C1EDC5B91C03B80F009D807B /* ViewController.m */,
-				C1EDC5BB1C03B80F009D807B /* Main.storyboard */,
+				C1EDC5F31C0544A3009D807B /* LocationController */,
+				C1EDC5E81C03B817009D807B /* View */,
 				C1EDC5C11C03B80F009D807B /* Assets.xcassets */,
 				C1EDC5C31C03B80F009D807B /* LaunchScreen.storyboard */,
 				C1EDC5C61C03B80F009D807B /* Info.plist */,
@@ -141,6 +149,23 @@
 				C1EDC5DC1C03B80F009D807B /* Info.plist */,
 			);
 			path = LocRemUITests;
+			sourceTree = "<group>";
+		};
+		C1EDC5E81C03B817009D807B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5BB1C03B80F009D807B /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C1EDC5F31C0544A3009D807B /* LocationController */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5F01C054401009D807B /* LocationController.h */,
+				C1EDC5F11C054423009D807B /* LocationController.m */,
+			);
+			name = LocationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +236,11 @@
 					C1EDC5AE1C03B80F009D807B = {
 						CreatedOnToolsVersion = 7.1.1;
 						DevelopmentTeam = 42AK92S3WA;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					C1EDC5CA1C03B80F009D807B = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -276,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1EDC5F21C054423009D807B /* LocationController.m in Sources */,
 				C1EDC5BA1C03B80F009D807B /* ViewController.m in Sources */,
 				C1EDC5C01C03B80F009D807B /* LocRem.xcdatamodeld in Sources */,
 				C1EDC5B71C03B80F009D807B /* AppDelegate.m in Sources */,
@@ -421,6 +452,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocRem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -432,6 +464,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = LocRem/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.franciscoragland.LocRem;
 				PRODUCT_NAME = "$(TARGET_NAME)";

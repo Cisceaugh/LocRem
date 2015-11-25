@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gLb-Qa-lpB">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,95 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IBa-Ka-5E6">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="556"/>
+                                <animations/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="l5v-yI-ukw"/>
+                                </connections>
+                            </mapView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Gq-KO-H4I">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem style="plain" id="sZo-Ak-UIy">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LXg-KR-TVL">
+                                            <rect key="frame" x="20" y="7" width="36" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" title="Loc 1"/>
+                                            <connections>
+                                                <action selector="locationButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="itJ-SL-yG3"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="CdJ-Om-4fK"/>
+                                    <barButtonItem style="plain" id="5Oe-k2-DsB">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VJ3-Cy-IDG">
+                                            <rect key="frame" x="281" y="7" width="38" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" title="Loc 2"/>
+                                            <connections>
+                                                <action selector="locationButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QiB-gQ-ZoS"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="SYt-fm-CFi"/>
+                                    <barButtonItem style="plain" id="h7K-NE-Hwm">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UyD-fT-H24">
+                                            <rect key="frame" x="542" y="7" width="38" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" title="Loc 3"/>
+                                            <connections>
+                                                <action selector="locationButtonSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uKc-2d-LAP"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IBa-Ka-5E6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-22" id="9PE-bl-oT5"/>
+                            <constraint firstItem="IBa-Ka-5E6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-44" id="DTy-dC-gdm"/>
+                            <constraint firstItem="IBa-Ka-5E6" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="HJ9-wc-gw5"/>
+                            <constraint firstItem="5Gq-KO-H4I" firstAttribute="top" secondItem="IBa-Ka-5E6" secondAttribute="bottom" id="Ino-mG-IWE"/>
+                            <constraint firstItem="5Gq-KO-H4I" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Nxz-nT-yrj"/>
+                            <constraint firstItem="IBa-Ka-5E6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RgH-3i-0xW"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5Gq-KO-H4I" secondAttribute="trailing" constant="-20" id="RpR-Zw-XKI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="Yrv-Yh-wEj"/>
+                    <connections>
+                        <outlet property="mapView" destination="IBa-Ka-5E6" id="2bP-p1-In3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="757" y="326"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7B5-eu-Frr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gLb-Qa-lpB" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xgu-5M-llo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="UxL-Wk-YRk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="si2-Wf-dBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-55" y="326"/>
         </scene>
     </scenes>
 </document>
