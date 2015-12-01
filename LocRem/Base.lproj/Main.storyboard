@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gLb-Qa-lpB">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -82,11 +81,31 @@
                     <navigationItem key="navigationItem" id="Yrv-Yh-wEj"/>
                     <connections>
                         <outlet property="mapView" destination="IBa-Ka-5E6" id="2bP-p1-In3"/>
+                        <segue destination="pd7-Tz-tiZ" kind="show" id="GRD-Ld-Dge"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757" y="326"/>
+            <point key="canvasLocation" x="713" y="240"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="3XU-ZK-hOF">
+            <objects>
+                <viewController id="pd7-Tz-tiZ" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sAW-TG-aC3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lwi-52-0Qy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZpV-AZ-5rC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1JO-mx-OFn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1385" y="240"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7B5-eu-Frr">
@@ -105,7 +124,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="si2-Wf-dBZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="326"/>
+            <point key="canvasLocation" x="12" y="240"/>
         </scene>
     </scenes>
 </document>

@@ -23,6 +23,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self requestPermissions];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     [self.mapView setShowsUserLocation:YES];
 }
 
@@ -32,11 +36,12 @@
 
 
 //functions
+
 - (void)requestPermissions {
 
     [self setLocationManager:[[CLLocationManager alloc]init]];
-    
     [self.locationManager requestWhenInUseAuthorization];
+    
 }
 
 - (void)setRegionForCoordinate:(MKCoordinateRegion)region {
@@ -74,6 +79,5 @@
         [self setRegionForCoordinate:region];
     }
 }
-
 
 @end

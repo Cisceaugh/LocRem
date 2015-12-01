@@ -112,10 +112,9 @@
 			children = (
 				C1EDC5B51C03B80F009D807B /* AppDelegate.h */,
 				C1EDC5B61C03B80F009D807B /* AppDelegate.m */,
-				C1EDC5B81C03B80F009D807B /* ViewController.h */,
-				C1EDC5B91C03B80F009D807B /* ViewController.m */,
-				C1EDC5F31C0544A3009D807B /* LocationController */,
+				C1EDC63D1C0C35C4009D807B /* Model */,
 				C1EDC5E81C03B817009D807B /* View */,
+				C1EDC63C1C0C35BC009D807B /* Controller */,
 				C1EDC5C11C03B80F009D807B /* Assets.xcassets */,
 				C1EDC5C31C03B80F009D807B /* LaunchScreen.storyboard */,
 				C1EDC5C61C03B80F009D807B /* Info.plist */,
@@ -166,6 +165,23 @@
 				C1EDC5F11C054423009D807B /* LocationController.m */,
 			);
 			name = LocationController;
+			sourceTree = "<group>";
+		};
+		C1EDC63C1C0C35BC009D807B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C1EDC5B81C03B80F009D807B /* ViewController.h */,
+				C1EDC5B91C03B80F009D807B /* ViewController.m */,
+				C1EDC5F31C0544A3009D807B /* LocationController */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C1EDC63D1C0C35C4009D807B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -538,6 +554,7 @@
 				C1EDC5E11C03B80F009D807B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1EDC5E21C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRemTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +563,7 @@
 				C1EDC5E41C03B80F009D807B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C1EDC5E51C03B80F009D807B /* Build configuration list for PBXNativeTarget "LocRemUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +572,7 @@
 				C1EDC5E71C03B80F009D807B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
