@@ -68,6 +68,7 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="IBa-Ka-5E6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-22" id="9PE-bl-oT5"/>
                             <constraint firstItem="IBa-Ka-5E6" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" constant="-44" id="DTy-dC-gdm"/>
@@ -77,14 +78,17 @@
                             <constraint firstItem="IBa-Ka-5E6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="RgH-3i-0xW"/>
                             <constraint firstAttribute="trailingMargin" secondItem="5Gq-KO-H4I" secondAttribute="trailing" constant="-20" id="RpR-Zw-XKI"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="P5v-JM-tYJ" appends="YES" id="MQa-cM-Vh7"/>
+                        </connections>
                     </view>
                     <navigationItem key="navigationItem" id="Yrv-Yh-wEj"/>
                     <connections>
                         <outlet property="mapView" destination="IBa-Ka-5E6" id="2bP-p1-In3"/>
-                        <segue destination="pd7-Tz-tiZ" kind="show" id="GRD-Ld-Dge"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="P5v-JM-tYJ"/>
             </objects>
             <point key="canvasLocation" x="713" y="240"/>
         </scene>

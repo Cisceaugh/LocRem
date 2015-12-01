@@ -18,6 +18,8 @@
 		C1EDC5DB1C03B80F009D807B /* LocRemUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5DA1C03B80F009D807B /* LocRemUITests.m */; };
 		C1EDC5EA1C03B82C009D807B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1EDC5E91C03B82C009D807B /* MapKit.framework */; };
 		C1EDC5F21C054423009D807B /* LocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C1EDC5F11C054423009D807B /* LocationController.m */; };
+		C1EDC6BB1C0D6B09009D807B /* Reminder.m in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC6BA1C0D6B09009D807B /* Reminder.m */; };
+		C1EDC6BD1C0D6B20009D807B /* Reminder.h in Resources */ = {isa = PBXBuildFile; fileRef = C1EDC6BC1C0D6B20009D807B /* Reminder.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		C1EDC5E91C03B82C009D807B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C1EDC5F01C054401009D807B /* LocationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationController.h; sourceTree = "<group>"; };
 		C1EDC5F11C054423009D807B /* LocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationController.m; sourceTree = "<group>"; };
+		C1EDC6BA1C0D6B09009D807B /* Reminder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reminder.m; sourceTree = "<group>"; };
+		C1EDC6BC1C0D6B20009D807B /* Reminder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reminder.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,8 @@
 		C1EDC63D1C0C35C4009D807B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C1EDC6BC1C0D6B20009D807B /* Reminder.h */,
+				C1EDC6BA1C0D6B09009D807B /* Reminder.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -296,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1EDC5C51C03B80F009D807B /* LaunchScreen.storyboard in Resources */,
+				C1EDC6BD1C0D6B20009D807B /* Reminder.h in Resources */,
 				C1EDC5C21C03B80F009D807B /* Assets.xcassets in Resources */,
+				C1EDC6BB1C0D6B09009D807B /* Reminder.m in Resources */,
 				C1EDC5BD1C03B80F009D807B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
